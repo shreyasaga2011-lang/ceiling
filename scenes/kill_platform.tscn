@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bo60mrsas52c"]
+
+[ext_resource type="Script" uid="uid://dcmlqrlojyvqo" path="res://scripts/kill_platform.gd" id="1_eic7q"]
+[ext_resource type="Texture2D" uid="uid://88tea53xqd13" path="res://assets/Simple Shapes/Square.png" id="1_vk3n4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eic7q"]
+size = Vector2(486, 478)
+
+[node name="kill_platform" type="Area2D" unique_id=1663720249 groups=["death"]]
+collision_layer = 2
+script = ExtResource("1_eic7q")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=57513861]
+self_modulate = Color(0.6745098, 0, 0, 1)
+texture = ExtResource("1_vk3n4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2084551596]
+position = Vector2(-11, -8)
+shape = SubResource("RectangleShape2D_eic7q")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

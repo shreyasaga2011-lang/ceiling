@@ -8,6 +8,7 @@ size = Vector2(512, 515)
 [node name="BasicPlatform" type="StaticBody2D" unique_id=501841501]
 modulate = Color(0.24139386, 0.33286896, 0.6618786, 1)
 self_modulate = Color(0.20535752, 0.36140642, 0.7313365, 1)
+collision_layer = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=403148547]
 texture = ExtResource("1_oexo1")
