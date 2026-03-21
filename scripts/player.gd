@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+@onready var cpu_particles_2d: CPUParticles2D = $CPUParticles2D
 var can_wall_jump = false
 var jumped_from_wall = false
 var wall_jump_used = false
@@ -13,6 +14,33 @@ const WALL_SLIDE_MAX = 300.0
 const HEX_RADIUS = 300.0
 
 @onready var sprite = $Sprite2D
+
+func update_particles() -> void:
+	if is_on_floor():
+		cpu_particles_2d.emitting = true
+		var normal = get_floor_normal()
+		cpu_particles_2d.position = -normal * HEX_RADIUS / 10.0
+		cpu_particles_2d.direction = -normal
+		cpu_particles_2d.initial_velocity_min = abs(velocity.x) * 0.1
+		cpu_particles_2d.initial_velocity_max = abs(velocity.x) * 0.2
+		cpu_particles_2d.gravity = Vector2(0, 200)
+	elif is_on_wall():
+		cpu_particles_2d.emitting = true
+		var normal = get_wall_normal()
+		cpu_particles_2d.position = -normal * HEX_RADIUS / 10.0
+		cpu_particles_2d.direction = -normal
+		cpu_particles_2d.initial_velocity_min = abs(velocity.y) * 0.1
+		cpu_particles_2d.initial_velocity_max = abs(velocity.y) * 0.2
+		cpu_particles_2d.gravity = Vector2(normal.x * -200, 200)
+	elif is_on_ceiling():
+		cpu_particles_2d.emitting = true
+		cpu_particles_2d.position = Vector2(0, -HEX_RADIUS / 10.0)
+		cpu_particles_2d.direction = Vector2.UP
+		cpu_particles_2d.initial_velocity_min = abs(velocity.x) * 0.1
+		cpu_particles_2d.initial_velocity_max = abs(velocity.x) * 0.2
+		cpu_particles_2d.gravity = Vector2(0, -200)
+	else:
+		cpu_particles_2d.emitting = false
 
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
@@ -34,7 +62,7 @@ func _physics_process(delta: float) -> void:
 				velocity.y += grav * delta
 	else:
 		jumped_from_wall = false
-		wall_jump_used = false  # reset on landing
+		wall_jump_used = false
 
 	if Input.is_action_just_pressed("ui_accept"):
 		if is_on_floor():
@@ -51,6 +79,8 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+
+	update_particles()
 
 	roll_speed = lerp(roll_speed, velocity.x / HEX_RADIUS, 10.0 * delta)
 	sprite.rotation += roll_speed * delta

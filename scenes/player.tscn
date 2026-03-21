@@ -3,11 +3,35 @@
 [ext_resource type="Script" uid="uid://bphi27c4qeaxn" path="res://scripts/player.gd" id="1_3vyb7"]
 [ext_resource type="Texture2D" uid="uid://cu87rcevobu2h" path="res://assets/Simple Shapes/Hexagon.png" id="2_g2els"]
 
+[sub_resource type="Gradient" id="Gradient_g2els"]
+offsets = PackedFloat32Array(0, 0.3611111, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0.6392157, 0.6392157, 0.6392157, 0.88235295, 1, 1, 1, 0)
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_g2els"]
 radius = 237.00844
 
 [node name="Player" type="CharacterBody2D" unique_id=2014519025]
 script = ExtResource("1_3vyb7")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="." unique_id=1335307874]
+position = Vector2(-1, 179)
+amount = 27
+lifetime = 2.0
+speed_scale = 1.5
+randomness = 1.0
+lifetime_randomness = 0.3
+emission_shape = 3
+emission_rect_extents = Vector2(40, 5)
+direction = Vector2(1, 1)
+spread = 76.19
+gravity = Vector2(-1000, -100)
+initial_velocity_min = 20.0
+initial_velocity_max = 50.0
+damping_min = 10.0
+damping_max = 10.0
+scale_amount_min = 20.0
+scale_amount_max = 30.0
+color_ramp = SubResource("Gradient_g2els")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1829550991]
 position = Vector2(-3, -2)
