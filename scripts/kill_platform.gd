@@ -15,4 +15,5 @@ func _process(delta: float) -> void:
 func _on_body_entered(body: Node2D) -> void:
 	cpu_particles_2d_2.emitting = true
 	await get_tree().create_timer(0.4).timeout
-	get_tree().reload_current_scene()
+	playerGlobal.die()
+	cpu_particles_2d_2.emitting = false

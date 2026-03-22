@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://cu2fetmq37lg4" path="res://scenes/basic_platform.tscn" id="1_pw63i"]
 [ext_resource type="PackedScene" uid="uid://b8xeyalmw67jx" path="res://scenes/player.tscn" id="2_7ykc4"]
 [ext_resource type="PackedScene" uid="uid://bo60mrsas52c" path="res://scenes/kill_platform.tscn" id="3_7ykc4"]
+[ext_resource type="PackedScene" uid="uid://bc2f4ytl6g735" path="res://scenes/checkpoint.tscn" id="3_pu3yx"]
 
 [node name="MainScene" type="Node2D" unique_id=1791242492]
 
@@ -69,6 +70,9 @@ modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
 position = Vector2(-29773, 258548)
 scale = Vector2(1000, 1000)
+
+[node name="Checkpoint" parent="Kill_platforms" unique_id=1217772848 instance=ExtResource("3_pu3yx")]
+position = Vector2(-130, -4920)
 
 [node name="Player" parent="." unique_id=2014519025 instance=ExtResource("2_7ykc4")]
 position = Vector2(-3926, 63)

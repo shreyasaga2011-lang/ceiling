@@ -26,7 +26,9 @@ var last_jump_side = 0 # 0 = None, 1 = Left, 2 = Right
 var wall_jump_cooldown = 0.0
 
 func _physics_process(delta: float) -> void:
-	# 1. TIMERS
+	if playerGlobal.death == true:
+		position.y = checkpointglobal.checkY
+		position.x = checkpointglobal.checkX
 	jump_buffer_timer -= delta
 	wall_jump_cooldown -= delta
 	
