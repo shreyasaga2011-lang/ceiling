@@ -4,14 +4,15 @@
 [ext_resource type="PackedScene" uid="uid://b8xeyalmw67jx" path="res://scenes/player.tscn" id="2_7ykc4"]
 [ext_resource type="PackedScene" uid="uid://bo60mrsas52c" path="res://scenes/kill_platform.tscn" id="3_7ykc4"]
 [ext_resource type="PackedScene" uid="uid://bc2f4ytl6g735" path="res://scenes/checkpoint.tscn" id="3_pu3yx"]
+[ext_resource type="Texture2D" uid="uid://b26x0f1wc3t34" path="res://—Pngtree—vector forward icon_4184777.png" id="5_gubc5"]
 
 [node name="MainScene" type="Node2D" unique_id=1791242492]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=927359595]
-offset_left = -102769.0
-offset_top = -88304.0
-offset_right = 96285.0
-offset_bottom = 59952.0
+offset_left = -102257.0
+offset_top = -86993.0
+offset_right = 96797.0
+offset_bottom = 61263.0
 color = Color(0.47843137, 0.7019608, 0.83137256, 1)
 
 [node name="Platforms" type="Node" parent="." unique_id=723168086]
@@ -76,3 +77,17 @@ position = Vector2(-130, -4920)
 
 [node name="Player" parent="." unique_id=2014519025 instance=ExtResource("2_7ykc4")]
 position = Vector2(-3926, 63)
+
+[node name="Label2" type="Label" parent="." unique_id=38783349]
+offset_left = 1925.0
+offset_top = -6391.0
+offset_right = 5610.0
+offset_bottom = -5570.0
+theme_override_font_sizes/font_size = 300
+text = "Destroyer of souls"
+
+[node name="—pngtree—vectorForwardIcon4184777" type="Sprite2D" parent="." unique_id=1737269257]
+position = Vector2(3141.9998, -5457)
+rotation = 1.5707964
+scale = Vector2(0.93457043, 2.4589841)
+texture = ExtResource("5_gubc5")
