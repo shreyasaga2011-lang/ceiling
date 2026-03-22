@@ -62,7 +62,7 @@ scale = Vector2(5, 1)
 [node name="Kill_platforms" type="Node" parent="." unique_id=1707562425]
 
 [node name="kill_platform" parent="Kill_platforms" unique_id=1663720249 instance=ExtResource("3_7ykc4")]
-position = Vector2(3223, -4838)
+position = Vector2(3236, -4547)
 
 [node name="kill_platform2" parent="Kill_platforms" unique_id=1089770372 instance=ExtResource("3_7ykc4")]
 modulate = Color(1, 1, 1, 0)
