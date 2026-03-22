@@ -6,28 +6,61 @@
 
 [node name="MainScene" type="Node2D" unique_id=1791242492]
 
-[node name="BasicPlatform" parent="." unique_id=501841501 instance=ExtResource("1_pw63i")]
-position = Vector2(-2509, 697)
-scale = Vector2(15, 1)
+[node name="ColorRect" type="ColorRect" parent="." unique_id=927359595]
+offset_left = -102769.0
+offset_top = -88304.0
+offset_right = 96285.0
+offset_bottom = 59952.0
+color = Color(0.47843137, 0.7019608, 0.83137256, 1)
 
-[node name="BasicPlatform2" parent="." unique_id=1040627572 instance=ExtResource("1_pw63i")]
-position = Vector2(1084, -333)
+[node name="Platforms" type="Node" parent="." unique_id=723168086]
+
+[node name="BasicPlatform7" parent="Platforms" unique_id=1768731994 instance=ExtResource("1_pw63i")]
+position = Vector2(-2482, -3528.0002)
 scale = Vector2(1, 5)
 
-[node name="BasicPlatform5" parent="." unique_id=1461707014 instance=ExtResource("1_pw63i")]
+[node name="BasicPlatform6" parent="Platforms" unique_id=901835152 instance=ExtResource("1_pw63i")]
+position = Vector2(-1458, -2058)
+scale = Vector2(5, 1)
+
+[node name="BasicPlatform5" parent="Platforms" unique_id=1461707014 instance=ExtResource("1_pw63i")]
 position = Vector2(3135, -2384)
 scale = Vector2(1, 5)
 
-[node name="BasicPlatform3" parent="." unique_id=730413864 instance=ExtResource("1_pw63i")]
-position = Vector2(-1441, -409)
+[node name="BasicPlatform" parent="Platforms" unique_id=501841501 instance=ExtResource("1_pw63i")]
+position = Vector2(-2509, 697)
+scale = Vector2(15, 1)
+
+[node name="BasicPlatform2" parent="Platforms" unique_id=1040627572 instance=ExtResource("1_pw63i")]
+position = Vector2(1084, -333)
+scale = Vector2(1, 5)
+
+[node name="BasicPlatform3" parent="Platforms" unique_id=730413864 instance=ExtResource("1_pw63i")]
+position = Vector2(-1440.9999, -409)
 scale = Vector2(5, 1)
 
-[node name="BasicPlatform4" parent="." unique_id=1239574080 instance=ExtResource("1_pw63i")]
+[node name="BasicPlatform8" parent="Platforms" unique_id=121423065 instance=ExtResource("1_pw63i")]
+position = Vector2(66, -4011)
+scale = Vector2(5, 1)
+
+[node name="BasicPlatform4" parent="Platforms" unique_id=1239574080 instance=ExtResource("1_pw63i")]
 position = Vector2(2106, -1359)
 scale = Vector2(5, 1)
 
+[node name="BasicPlatform9" parent="Platforms" unique_id=2045113194 instance=ExtResource("1_pw63i")]
+position = Vector2(2113, -3504)
+scale = Vector2(5, 1)
+
+[node name="Kill_platforms" type="Node" parent="." unique_id=1707562425]
+
+[node name="kill_platform" parent="Kill_platforms" unique_id=1663720249 instance=ExtResource("3_7ykc4")]
+position = Vector2(-3317, -2046)
+
+[node name="kill_platform2" parent="Kill_platforms" unique_id=1089770372 instance=ExtResource("3_7ykc4")]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(-29773, 258548)
+scale = Vector2(1000, 1000)
+
 [node name="Player" parent="." unique_id=2014519025 instance=ExtResource("2_7ykc4")]
 position = Vector2(-3926, 63)
-
-[node name="kill_platform" parent="." unique_id=1663720249 instance=ExtResource("3_7ykc4")]
-position = Vector2(-3317, -2046)

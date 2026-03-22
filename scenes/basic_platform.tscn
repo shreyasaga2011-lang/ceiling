@@ -6,8 +6,8 @@
 size = Vector2(512, 512)
 
 [node name="BasicPlatform" type="StaticBody2D" unique_id=501841501]
-modulate = Color(0.19607843, 0.19607843, 0.19607843, 1)
-self_modulate = Color(0.20535752, 0.36140642, 0.7313365, 1)
+modulate = Color(0.39215687, 0.39215687, 0.39215687, 1)
+self_modulate = Color(0, 0, 0, 1)
 collision_layer = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=403148547]
