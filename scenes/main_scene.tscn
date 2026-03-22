@@ -43,6 +43,10 @@ scale = Vector2(5, 1)
 position = Vector2(66, -4011)
 scale = Vector2(5, 1)
 
+[node name="BasicPlatform11" parent="Platforms" unique_id=117160130 instance=ExtResource("1_pw63i")]
+position = Vector2(66, -4011)
+scale = Vector2(5, 1)
+
 [node name="BasicPlatform4" parent="Platforms" unique_id=1239574080 instance=ExtResource("1_pw63i")]
 position = Vector2(2106, -1359)
 scale = Vector2(5, 1)
@@ -51,10 +55,14 @@ scale = Vector2(5, 1)
 position = Vector2(2113, -3504)
 scale = Vector2(5, 1)
 
+[node name="BasicPlatform10" parent="Platforms" unique_id=1777887481 instance=ExtResource("1_pw63i")]
+position = Vector2(4672.0005, -3504)
+scale = Vector2(5, 1)
+
 [node name="Kill_platforms" type="Node" parent="." unique_id=1707562425]
 
 [node name="kill_platform" parent="Kill_platforms" unique_id=1663720249 instance=ExtResource("3_7ykc4")]
-position = Vector2(-3317, -2046)
+position = Vector2(3223, -4838)
 
 [node name="kill_platform2" parent="Kill_platforms" unique_id=1089770372 instance=ExtResource("3_7ykc4")]
 modulate = Color(1, 1, 1, 0)
