@@ -9,10 +9,10 @@
 [node name="MainScene" type="Node2D" unique_id=1791242492]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=927359595]
-offset_left = -102257.0
-offset_top = -86993.0
-offset_right = 96797.0
-offset_bottom = 61263.0
+offset_left = -103852.0
+offset_top = -91459.0
+offset_right = 95202.0
+offset_bottom = 56797.0
 color = Color(0.47843137, 0.7019608, 0.83137256, 1)
 
 [node name="Platforms" type="Node" parent="." unique_id=723168086]
@@ -29,7 +29,27 @@ scale = Vector2(5, 1)
 position = Vector2(3135, -2384)
 scale = Vector2(1, 5)
 
-[node name="BasicPlatform" parent="Platforms" unique_id=501841501 instance=ExtResource("1_pw63i")]
+[node name="BasicPlatform15" parent="Platforms" unique_id=501841501 instance=ExtResource("1_pw63i")]
+position = Vector2(14893, -7537.0005)
+scale = Vector2(1, 10)
+
+[node name="BasicPlatform16" parent="Platforms" unique_id=2138169325 instance=ExtResource("1_pw63i")]
+position = Vector2(13818, -12570)
+scale = Vector2(1, 10)
+
+[node name="BasicPlatform17" parent="Platforms" unique_id=36003616 instance=ExtResource("1_pw63i")]
+position = Vector2(11923, -12617)
+scale = Vector2(1, 10)
+
+[node name="BasicPlatform18" parent="Platforms" unique_id=21877843 instance=ExtResource("1_pw63i")]
+position = Vector2(9782, -12608.001)
+scale = Vector2(1, 10)
+
+[node name="BasicPlatform19" parent="Platforms" unique_id=142149447 instance=ExtResource("1_pw63i")]
+position = Vector2(5527, -12589.001)
+scale = Vector2(1, 10)
+
+[node name="BasicPlatform" parent="Platforms" unique_id=1799219436 instance=ExtResource("1_pw63i")]
 position = Vector2(-2509, 697)
 scale = Vector2(15, 1)
 
@@ -57,14 +77,51 @@ scale = Vector2(5, 1)
 position = Vector2(2113, -3504)
 scale = Vector2(5, 1)
 
+[node name="BasicPlatform14" parent="Platforms" unique_id=1166262338 instance=ExtResource("1_pw63i")]
+position = Vector2(16330, -4169)
+scale = Vector2(5, 1)
+
 [node name="BasicPlatform10" parent="Platforms" unique_id=1777887481 instance=ExtResource("1_pw63i")]
 position = Vector2(4672.0005, -3504)
 scale = Vector2(5, 1)
+
+[node name="BasicPlatform12" parent="Platforms" unique_id=930729370 instance=ExtResource("1_pw63i")]
+position = Vector2(10070, -3504)
+scale = Vector2(20, 1)
+
+[node name="BasicPlatform13" parent="Platforms" unique_id=50833469 instance=ExtResource("1_pw63i")]
+position = Vector2(10051, -5200)
+scale = Vector2(22, 1)
+
+[node name="BasicPlatform20" parent="Platforms" unique_id=1733223742 instance=ExtResource("1_pw63i")]
+position = Vector2(3494, -15809)
+
+[node name="BasicPlatform21" parent="Platforms" unique_id=1498956581 instance=ExtResource("1_pw63i")]
+position = Vector2(5248, -16422)
+
+[node name="BasicPlatform22" parent="Platforms" unique_id=399665835 instance=ExtResource("1_pw63i")]
+position = Vector2(3487, -17234)
+
+[node name="BasicPlatform23" parent="Platforms" unique_id=1066213951 instance=ExtResource("1_pw63i")]
+position = Vector2(5287, -17952)
+
+[node name="BasicPlatform24" parent="Platforms" unique_id=1153805978 instance=ExtResource("1_pw63i")]
+position = Vector2(3456, -18729)
+
+[node name="BasicPlatform25" parent="Platforms" unique_id=1109159437 instance=ExtResource("1_pw63i")]
+position = Vector2(5290, -19521)
+
+[node name="BasicPlatform26" parent="Platforms" unique_id=471528790 instance=ExtResource("1_pw63i")]
+position = Vector2(5322, -20596)
 
 [node name="Kill_platforms" type="Node" parent="." unique_id=1707562425]
 
 [node name="kill_platform" parent="Kill_platforms" unique_id=1663720249 instance=ExtResource("3_7ykc4")]
 position = Vector2(3236, -4547)
+
+[node name="kill_platform3" parent="Kill_platforms" unique_id=764536753 instance=ExtResource("3_7ykc4")]
+position = Vector2(8800, -3988)
+scale = Vector2(15, 1)
 
 [node name="kill_platform2" parent="Kill_platforms" unique_id=1089770372 instance=ExtResource("3_7ykc4")]
 modulate = Color(1, 1, 1, 0)
@@ -76,7 +133,7 @@ scale = Vector2(1000, 1000)
 position = Vector2(-130, -4920)
 
 [node name="Player" parent="." unique_id=2014519025 instance=ExtResource("2_7ykc4")]
-position = Vector2(-3926, 63)
+position = Vector2(5338, -15935)
 
 [node name="Label2" type="Label" parent="." unique_id=38783349]
 offset_left = 1925.0
@@ -86,8 +143,50 @@ offset_bottom = -5570.0
 theme_override_font_sizes/font_size = 300
 text = "Destroyer of souls"
 
+[node name="Label5" type="Label" parent="." unique_id=1713664784]
+offset_left = -6087.0
+offset_top = -1631.0
+offset_right = -2402.0
+offset_bottom = -810.0
+theme_override_font_sizes/font_size = 300
+text = "Arrow keys to move
+Space to jump"
+
+[node name="Label6" type="Label" parent="." unique_id=502133011]
+offset_left = -6562.0
+offset_top = -4146.0
+offset_right = -2877.0
+offset_bottom = -3325.0
+theme_override_font_sizes/font_size = 300
+text = "Press space while 
+on a wall to to scale up it"
+
+[node name="Label4" type="Label" parent="." unique_id=773362210]
+offset_left = 5085.0
+offset_top = -6420.0
+offset_right = 8770.0
+offset_bottom = -5599.0
+theme_override_font_sizes/font_size = 300
+text = "Stick to the ceiling "
+
+[node name="Label3" type="Label" parent="." unique_id=493479319]
+offset_left = -940.0
+offset_top = -6630.0
+offset_right = 2745.0
+offset_bottom = -5397.0
+theme_override_font_sizes/font_size = 300
+text = "Checkpoint
+
+"
+
 [node name="—pngtree—vectorForwardIcon4184777" type="Sprite2D" parent="." unique_id=1737269257]
 position = Vector2(3141.9998, -5457)
+rotation = 1.5707964
+scale = Vector2(0.93457043, 2.4589841)
+texture = ExtResource("5_gubc5")
+
+[node name="—pngtree—vectorForwardIcon4184778" type="Sprite2D" parent="." unique_id=1982972099]
+position = Vector2(-81.00073, -5720)
 rotation = 1.5707964
 scale = Vector2(0.93457043, 2.4589841)
 texture = ExtResource("5_gubc5")
