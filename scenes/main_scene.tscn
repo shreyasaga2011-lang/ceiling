@@ -115,7 +115,13 @@ position = Vector2(5290, -19521)
 position = Vector2(5322, -20596)
 
 [node name="BasicPlatform27" parent="Platforms" unique_id=1767233564 instance=ExtResource("1_pw63i")]
-position = Vector2(5322, -20596)
+position = Vector2(-3002, -20524)
+
+[node name="BasicPlatform29" parent="Platforms" unique_id=828639212 instance=ExtResource("1_pw63i")]
+position = Vector2(-4062, -19504)
+
+[node name="BasicPlatform30" parent="Platforms" unique_id=880448838 instance=ExtResource("1_pw63i")]
+position = Vector2(-5225, -18397)
 
 [node name="BasicPlatform28" parent="Platforms" unique_id=20762762 instance=ExtResource("1_pw63i")]
 position = Vector2(815, -21273)
@@ -148,8 +154,17 @@ scale = Vector2(1000, 1000)
 [node name="Checkpoint" parent="Kill_platforms" unique_id=1217772848 instance=ExtResource("3_pu3yx")]
 position = Vector2(-130, -4920)
 
+[node name="Checkpoint2" parent="Kill_platforms" unique_id=906534754 instance=ExtResource("3_pu3yx")]
+position = Vector2(16961, -4944)
+
+[node name="Checkpoint3" parent="Kill_platforms" unique_id=969755157 instance=ExtResource("3_pu3yx")]
+position = Vector2(5561, -15701)
+
+[node name="Checkpoint4" parent="Kill_platforms" unique_id=1391815391 instance=ExtResource("3_pu3yx")]
+position = Vector2(-2994, -21397)
+
 [node name="Player" parent="." unique_id=2014519025 instance=ExtResource("2_7ykc4")]
-position = Vector2(5338, -15935)
+position = Vector2(-4683, 62)
 
 [node name="Label2" type="Label" parent="." unique_id=38783349]
 offset_left = 1925.0
