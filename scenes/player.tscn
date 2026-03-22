@@ -46,8 +46,10 @@ texture = ExtResource("2_g2els")
 
 [node name="CPUParticles2D2" type="CPUParticles2D" parent="." unique_id=1284181983]
 position = Vector2(-292, 0)
+emitting = false
 amount = 200
 lifetime = 600.0
+one_shot = true
 speed_scale = 4.0
 explosiveness = 1.0
 randomness = 1.0

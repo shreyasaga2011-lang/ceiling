@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://88tea53xqd13" path="res://assets/Simple Shapes/Square.png" id="1_vk3n4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eic7q"]
-size = Vector2(486, 478)
+size = Vector2(512, 512)
 
 [node name="kill_platform" type="Area2D" unique_id=1663720249 groups=["death"]]
 collision_layer = 2
@@ -15,7 +15,28 @@ self_modulate = Color(0.6745098, 0, 0, 1)
 texture = ExtResource("1_vk3n4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2084551596]
-position = Vector2(-11, -8)
 shape = SubResource("RectangleShape2D_eic7q")
+
+[node name="CPUParticles2D2" type="CPUParticles2D" parent="." unique_id=598136326]
+position = Vector2(-292, 0)
+emitting = false
+amount = 200
+lifetime = 600.0
+one_shot = true
+speed_scale = 4.0
+explosiveness = 1.0
+randomness = 1.0
+emission_shape = 1
+emission_sphere_radius = 128.0
+direction = Vector2(1, 1)
+spread = 180.0
+initial_velocity_min = 1000.0
+initial_velocity_max = 1000.0
+orbit_velocity_min = 0.04
+orbit_velocity_max = 0.1
+tangential_accel_min = -100.0
+tangential_accel_max = 1.0
+scale_amount_min = 40.0
+scale_amount_max = 100.0
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

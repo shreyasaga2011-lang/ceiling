@@ -7,15 +7,27 @@
 [node name="MainScene" type="Node2D" unique_id=1791242492]
 
 [node name="BasicPlatform" parent="." unique_id=501841501 instance=ExtResource("1_pw63i")]
-position = Vector2(542, 703)
-scale = Vector2(5, 1)
+position = Vector2(-2509, 697)
+scale = Vector2(15, 1)
 
 [node name="BasicPlatform2" parent="." unique_id=1040627572 instance=ExtResource("1_pw63i")]
-position = Vector2(1301, -201)
+position = Vector2(1084, -333)
 scale = Vector2(1, 5)
 
+[node name="BasicPlatform5" parent="." unique_id=1461707014 instance=ExtResource("1_pw63i")]
+position = Vector2(3135, -2384)
+scale = Vector2(1, 5)
+
+[node name="BasicPlatform3" parent="." unique_id=730413864 instance=ExtResource("1_pw63i")]
+position = Vector2(-1441, -409)
+scale = Vector2(5, 1)
+
+[node name="BasicPlatform4" parent="." unique_id=1239574080 instance=ExtResource("1_pw63i")]
+position = Vector2(2106, -1359)
+scale = Vector2(5, 1)
+
 [node name="Player" parent="." unique_id=2014519025 instance=ExtResource("2_7ykc4")]
-position = Vector2(534, 131)
+position = Vector2(-3926, 63)
 
 [node name="kill_platform" parent="." unique_id=1663720249 instance=ExtResource("3_7ykc4")]
-position = Vector2(-915, -284)
+position = Vector2(-3317, -2046)
