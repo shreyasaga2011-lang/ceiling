@@ -9,10 +9,10 @@
 [node name="MainScene" type="Node2D" unique_id=1791242492]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=927359595]
-offset_left = -103852.0
-offset_top = -91459.0
-offset_right = 95202.0
-offset_bottom = 56797.0
+offset_left = -106573.0
+offset_top = -93188.0
+offset_right = 92481.0
+offset_bottom = 55068.0
 color = Color(0.47843137, 0.7019608, 0.83137256, 1)
 
 [node name="Platforms" type="Node" parent="." unique_id=723168086]
@@ -114,10 +114,26 @@ position = Vector2(5290, -19521)
 [node name="BasicPlatform26" parent="Platforms" unique_id=471528790 instance=ExtResource("1_pw63i")]
 position = Vector2(5322, -20596)
 
+[node name="BasicPlatform27" parent="Platforms" unique_id=1767233564 instance=ExtResource("1_pw63i")]
+position = Vector2(5322, -20596)
+
+[node name="BasicPlatform28" parent="Platforms" unique_id=20762762 instance=ExtResource("1_pw63i")]
+position = Vector2(815, -21273)
+scale = Vector2(10, 1)
+
 [node name="Kill_platforms" type="Node" parent="." unique_id=1707562425]
 
 [node name="kill_platform" parent="Kill_platforms" unique_id=1663720249 instance=ExtResource("3_7ykc4")]
 position = Vector2(3236, -4547)
+
+[node name="kill_platform4" parent="Kill_platforms" unique_id=615369933 instance=ExtResource("3_7ykc4")]
+position = Vector2(2328, -21782)
+
+[node name="kill_platform5" parent="Kill_platforms" unique_id=179953976 instance=ExtResource("3_7ykc4")]
+position = Vector2(615, -21755)
+
+[node name="kill_platform6" parent="Kill_platforms" unique_id=1501045939 instance=ExtResource("3_7ykc4")]
+position = Vector2(-1134, -21791)
 
 [node name="kill_platform3" parent="Kill_platforms" unique_id=764536753 instance=ExtResource("3_7ykc4")]
 position = Vector2(8800, -3988)
