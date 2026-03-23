@@ -1,6 +1,6 @@
 extends Node
-var checkX
-var checkY
+var checkX =-4683.0
+var checkY = 62
 
 
 func _ready() -> void:
