@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://7hubhyf0qnwq"]
+
+[ext_resource type="Texture2D" uid="uid://88tea53xqd13" path="res://assets/Simple Shapes/Square.png" id="1_1e2pk"]
+[ext_resource type="Script" uid="uid://d1nmi4te3e7b0" path="res://scripts/go_to_end.gd" id="1_cdj10"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cdj10"]
+size = Vector2(512, 512)
+
+[node name="goToEnd" type="Area2D" unique_id=2130698110]
+script = ExtResource("1_cdj10")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=415700187]
+shape = SubResource("RectangleShape2D_cdj10")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1316230620]
+modulate = Color(0.11764706, 0.5411765, 0, 0.45490196)
+texture = ExtResource("1_1e2pk")
+
+[connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]

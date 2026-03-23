@@ -18,3 +18,11 @@ scale = Vector2(1000, 1)
 
 [node name="Player" parent="." unique_id=2014519025 instance=ExtResource("2_85q8e")]
 position = Vector2(244, 46)
+
+[node name="Label" type="Label" parent="." unique_id=1495225308]
+offset_left = -641.0
+offset_top = -1426.0
+offset_right = 1303.0
+offset_bottom = -1017.0
+theme_override_font_sizes/font_size = 300
+text = "omg you won"
