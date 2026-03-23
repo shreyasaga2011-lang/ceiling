@@ -9,9 +9,9 @@
 [node name="MainScene" type="Node2D" unique_id=1791242492]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=927359595]
-offset_left = -106573.0
+offset_left = -106566.0
 offset_top = -93188.0
-offset_right = 92481.0
+offset_right = 92488.0
 offset_bottom = 55068.0
 color = Color(0.47843137, 0.7019608, 0.83137256, 1)
 
@@ -122,6 +122,9 @@ position = Vector2(-4062, -19504)
 
 [node name="BasicPlatform30" parent="Platforms" unique_id=880448838 instance=ExtResource("1_pw63i")]
 position = Vector2(-5225, -18397)
+
+[node name="BasicPlatform31" parent="Platforms" unique_id=777825033 instance=ExtResource("1_pw63i")]
+position = Vector2(-6430, -19498)
 
 [node name="BasicPlatform28" parent="Platforms" unique_id=20762762 instance=ExtResource("1_pw63i")]
 position = Vector2(815, -21273)

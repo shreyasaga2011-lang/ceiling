@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bdw5xhv40gpug"]
+
+[ext_resource type="PackedScene" uid="uid://cu2fetmq37lg4" path="res://scenes/basic_platform.tscn" id="1_s7dif"]
+[ext_resource type="PackedScene" uid="uid://b8xeyalmw67jx" path="res://scenes/player.tscn" id="2_85q8e"]
+
+[node name="EndScene" type="Node2D" unique_id=2047957352]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1440377834]
+offset_left = -106566.0
+offset_top = -93188.0
+offset_right = 92488.0
+offset_bottom = 55068.0
+color = Color(0.47843137, 0.7019608, 0.83137256, 1)
+
+[node name="BasicPlatform" parent="." unique_id=501841501 instance=ExtResource("1_s7dif")]
+position = Vector2(262.00003, 624)
+scale = Vector2(1000, 1)
+
+[node name="Player" parent="." unique_id=2014519025 instance=ExtResource("2_85q8e")]
+position = Vector2(244, 46)
